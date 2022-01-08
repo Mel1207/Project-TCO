@@ -207,16 +207,19 @@ body {
 }
 .section-2 .cat-img-slider .slick-dots {
   display: flex;
-  position: absolute;
-  left: 5px;
-  bottom: -45px;
+  justify-content: center;
+  position: relative;
+  bottom: -30px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
 .section-2 .cat-img-slider .slick-dots li {
   height: 10px;
   width: 10px;
   border: 1px solid #fff;
   border-radius: 50px;
-  margin-right: 15px;
+  margin: 0 7px 20px 7px;
 }
 .section-2 .cat-img-slider .slick-dots li.slick-active {
   background: #fff;
@@ -226,8 +229,9 @@ body {
 }
 .section-2 .btn-generate {
   position: absolute;
-  right: 0;
-  bottom: -60px;
+  bottom: -66px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .section-3 {
