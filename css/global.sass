@@ -302,6 +302,7 @@ body
                 display: block
                 font-family: 'Montserrat', sans-serif 
                 font-size: 1rem
+                cursor: pointer
 
 // FOOTER
 .footer
@@ -371,6 +372,10 @@ body
     background: $cBlueGreen
     border-radius: 5px
     color: $cWhite
+    transition: 0.5s ease
+
+    &:hover
+        background: $cLBlueGreen
 
 .btn-back
     height: 40px
@@ -382,11 +387,15 @@ body
     right: 5%
     display: none
     width: max-content
+    transition: 0.5s ease
 
     img 
         height: 30px
         width: 30px
         margin: 0 10px
+
+    &:hover
+        background: $cLBlueGreen
 
 .btn-show 
     display: flex
