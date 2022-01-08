@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F3FDFF;
+}
+body .dummyContainer {
+  height: 100vh;
+}
+
+.navbar {
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: tranparent;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.navbar .navbar-container {
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-container .nav-links {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-container .nav-links .nav-item {
+  margin-left: 2rem;
+}
+.navbar .navbar-container .nav-links .nav-item a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navbar-active {
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.navbar-active .nav-links li a {
+  color: #292929 !important;
+}
+
+.header {
+  position: relative;
+  height: 720px;
+  width: 100%;
+  background: url("/images/img-header.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.header .container {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .container h1 {
+  color: #fff;
+  font-size: 3.1rem;
+  font-weight: 500;
+}
+.header .container p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.6rem;
+  margin: 2rem 0 2.5rem 0;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.section-1 {
+  height: auto;
+  padding: 10vh 0;
+}
+.section-1 .about-img {
+  width: 100%;
+}
+.section-1 .d-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.5rem;
+}
+.section-1 .d-grid .about-info h2 {
+  font-size: 1.9rem;
+  color: #292929;
+}
+.section-1 .d-grid .about-info span {
+  color: #22A0BB;
+  font-size: 0.8rem;
+}
+.section-1 .d-grid .about-text {
+  margin: 1rem 0 1.5rem 0;
+}
+.section-1 .d-grid .about-text p {
+  color: #292929;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.section-2 {
+  padding: 10vh 0 15vh 0;
+  background: #4B7A85;
+  height: auto;
+}
+.section-2 h2 {
+  color: #fff;
+  font-size: 1.9rem;
+}
+.section-2 span {
+  color: #3EDCFF;
+  font-size: 0.8rem;
+}
+.section-2 p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.6rem;
+  margin: 1rem 0 2rem 0;
+}
+.section-2 .cat-img-slider {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.section-2 .cat-img-slider .img-cat-container {
+  height: 265px;
+  margin: 0 5px;
+  background: #fff;
+}
+.section-2 .cat-img-slider .img-cat-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.section-2 .cat-img-slider .slick-dots {
+  display: flex;
+  position: absolute;
+  left: 5px;
+  bottom: -45px;
+}
+.section-2 .cat-img-slider .slick-dots li {
+  height: 10px;
+  width: 10px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.section-2 .cat-img-slider .slick-dots li.slick-active {
+  background: #fff;
+}
+.section-2 .cat-img-slider .slick-dots button {
+  display: none;
+}
+.section-2 .btn-generate {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #22A0BB;
+  color: #fff;
+}
+
+.btn-show {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
