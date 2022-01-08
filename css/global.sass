@@ -28,6 +28,9 @@ body
         align-items: center
         justify-content: space-between
 
+        .nav-logo-active
+            display: none
+
         .nav-links 
             display: flex
             align-items: center
@@ -39,9 +42,16 @@ body
                     color: $cWhite
                     font-size: 1rem
 
+// NAVBAR ACTIVE
 .navbar-active
     background: $cWhite
     transition: all 0.3s ease
+
+    .nav-logo-active
+        display: block !important
+
+    .nav-logo
+        display: none !important
 
     .nav-links
         li 
