@@ -212,9 +212,25 @@ body .dummyContainer {
   color: #22A0BB;
   font-size: 0.8rem;
 }
+.section-3 p {
+  color: #292929;
+  line-height: 1.6rem;
+  margin: 1rem 0 2rem 0;
+}
 .section-3 .d-flex {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+.section-3 .d-flex .contactUs-text {
+  max-width: 400px;
+}
+.section-3 .d-flex .contactUs-text .contact-icons {
+  display: flex;
+  align-items: center;
+}
+.section-3 .d-flex .contactUs-text .contact-icons li {
+  margin-right: 2rem;
 }
 .section-3 .d-flex .contact-form-container {
   width: 450px;
@@ -222,6 +238,11 @@ body .dummyContainer {
   background: #fff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  padding: 2.5rem 2.25rem;
+}
+.section-3 .d-flex .contact-form-container h3 {
+  font-size: 1.25rem;
+  color: #292929;
 }
 
 .btn {
