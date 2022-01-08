@@ -177,7 +177,7 @@ body {
   position: relative;
   height: 720px;
   width: 100%;
-  background: url("../images/img-header.jpg") center;
+  background: url("https://raw.githubusercontent.com/Mel1207/Project-TCO/main/images/img-header.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
 }
