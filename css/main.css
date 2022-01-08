@@ -18,6 +18,29 @@ ul {
   .navbar .hamburger-menu {
     display: flex !important;
   }
+
+  .section-1 .d-grid {
+    grid-template-columns: 1fr !important;
+    grid-row-gap: 30px;
+  }
+
+  .section-3 .d-flex {
+    flex-direction: column;
+  }
+  .section-3 .d-flex .contactUs-text {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .section-3 .d-flex .contact-form-container {
+    width: 100% !important;
+  }
+
+  .footer .d-flex {
+    flex-direction: column;
+  }
+  .footer .column-1, .footer .column-2 {
+    margin-bottom: 2.5rem;
+  }
 }
 *, html {
   margin: 0;
@@ -86,6 +109,7 @@ body {
 
 .navbar-active {
   background: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 .navbar-active .nav-logo-active {
