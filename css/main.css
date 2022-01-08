@@ -21,9 +21,6 @@ ul {
 body {
   background: #F3FDFF;
 }
-body .dummyContainer {
-  height: 100vh;
-}
 
 .navbar {
   height: 8vh;
@@ -263,12 +260,29 @@ body .dummyContainer {
   margin-left: auto;
 }
 
+.footer {
+  height: 400px;
+  width: 100%;
+  background: #1D1D1D;
+}
+.footer .d-flex {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
 .btn {
   padding: 10px 30px;
-  border-radius: 5px;
   background: #22A0BB;
+  border-radius: 5px;
   color: #fff;
-  display: block;
+}
+
+.btn-back {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: none;
   width: max-content;
 }
 

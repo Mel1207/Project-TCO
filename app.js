@@ -1,5 +1,5 @@
 const generateBtn = document.querySelector('.btn-generate')
-const btnTrigger = document.querySelector('.btn')
+const btnTrigger = document.querySelector('.btn-back')
 const imgContainer = document.querySelector('.imgContainer')
 const nav = document.querySelector('.navbar')
 const navLogo = document.querySelector('nav-logo')
@@ -7,8 +7,11 @@ let body = document.body, html = document.documentElement;
 let height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 let halfHeight = height / 2
 
+
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
+
+    console.log(scroll)
 
     if (scroll >= 50) {
         nav.classList.add('navbar-active')
