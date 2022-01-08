@@ -262,9 +262,9 @@ body {
 }
 
 .footer {
-  height: 400px;
+  padding-top: 10vh;
   width: 100%;
-  background: #1D1D1D;
+  background: #292929;
 }
 .footer .d-flex {
   display: flex;
@@ -283,7 +283,7 @@ body {
   margin-bottom: 1.2rem;
 }
 .footer .d-flex .column-2 ul li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .footer .d-flex .column-2 ul li a {
   color: rgba(255, 255, 255, 0.8);
@@ -301,6 +301,19 @@ body {
 }
 .footer .d-flex .column-3 ul li {
   margin-right: 30px;
+}
+.footer .footer-lower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 100%;
+  margin-top: 10vh;
+  background: #1D1D1D;
+}
+.footer .footer-lower span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .btn {
