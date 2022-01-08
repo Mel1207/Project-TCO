@@ -1,8 +1,10 @@
-const generateBtn = document.querySelector('.btn-generate')
-const btnTrigger = document.querySelector('.btn-back')
-const imgContainer = document.querySelector('.imgContainer')
-const nav = document.querySelector('.navbar')
-const navLogo = document.querySelector('nav-logo')
+const generateBtn = document.querySelector('.btn-generate');
+const btnTrigger = document.querySelector('.btn-back');
+const imgContainer = document.querySelector('.imgContainer');
+const nav = document.querySelector('.navbar');
+const navLogo = document.querySelector('nav-logo');
+const mobileMenu = document.querySelector('.mobile-menu');
+const menu = document.querySelector('.hamburger-menu');
 let body = document.body, html = document.documentElement;
 let height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 let halfHeight = height / 2
@@ -31,6 +33,14 @@ window.addEventListener("scroll", () => {
 
 console.log(height)
 console.log(halfHeight)
+
+// Mobile Menu
+menu.addEventListener('click', () => {
+    menu.classList.toggle('menu-click')
+    mobileMenu.classList.toggle('mobile-menu-show')
+    body.classList.toggle('body-hidden')
+
+})
 
 
 // SLICK

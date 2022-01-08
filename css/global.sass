@@ -7,6 +7,9 @@
 body 
     background: $lBlue
 
+.body-hidden
+    overflow: hidden
+
 // NAVBAR
 .navbar 
     height: 8vh
@@ -61,6 +64,58 @@ body
         background: $cWhite
         transition: 0.3s ease
 
+.menu-click
+    .top-line
+        -webkit-transform: rotate(45deg)
+        -moz-transform: rotate(45deg)
+        -o-transform: rotate(45deg)
+        transform: rotate(45deg) translate(9px, 6px)
+        top: -3px
+        left: 8px
+    
+    .mid-line
+        width: 0
+        opacity: 0
+
+    .bot-line
+        -webkit-transform: rotate(-45deg)
+        -moz-transform: rotate(-45deg)
+        -o-transform: rotate(-45deg)
+        transform: rotate(-45deg) translate(9px, -5px)
+        top: 39px
+        left: 8px
+    
+// MOBILE MENU
+.mobile-menu
+    height: 100%
+    position: fixed
+    z-index: 9
+    width: 100%
+    top: 0
+    left: -100%
+    bottom: 0
+    background: #000
+    transition: 0.5s ease
+
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+        position: relative
+
+    .mobile-menu-links
+        .mobile-link 
+            margin-bottom: 20px
+
+            a 
+                font-size: 1.6rem
+                font-weight: 300
+                margin-bottom: 20px
+                color: $cWhite
+
+.mobile-menu-show
+    left: 0
+
 // NAVBAR ACTIVE
 .navbar-active
     background: $cWhite
@@ -81,6 +136,7 @@ body
     .hamburger-menu 
         div 
             background: $cBlack
+
 
 // HEADER
 .header
@@ -364,9 +420,7 @@ body
             font-size: 0.75rem
             color: rgba($cWhite, .5)
 
-
-
-
+// BUTTONS
 .btn 
     padding: 10px 30px 
     background: $cBlueGreen
