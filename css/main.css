@@ -201,11 +201,36 @@ body .dummyContainer {
   bottom: -60px;
 }
 
+.section-3 {
+  padding: 10vh 0;
+}
+.section-3 h2 {
+  color: #292929;
+  font-size: 1.9rem;
+}
+.section-3 span {
+  color: #22A0BB;
+  font-size: 0.8rem;
+}
+.section-3 .d-flex {
+  display: flex;
+  align-items: center;
+}
+.section-3 .d-flex .contact-form-container {
+  width: 450px;
+  height: 492px;
+  background: #fff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
 .btn {
   padding: 10px 30px;
   border-radius: 5px;
   background: #22A0BB;
   color: #fff;
+  display: block;
+  width: max-content;
 }
 
 .btn-show {
