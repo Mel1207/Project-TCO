@@ -243,6 +243,24 @@ body .dummyContainer {
 .section-3 .d-flex .contact-form-container h3 {
   font-size: 1.25rem;
   color: #292929;
+  margin-bottom: 1.5rem;
+}
+.section-3 .d-flex .contact-form-container input {
+  height: 45px;
+  margin-bottom: 15px;
+}
+.section-3 .d-flex .contact-form-container input, .section-3 .d-flex .contact-form-container textarea {
+  padding: 5px 20px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #22A0BB;
+  border-radius: 5px;
+}
+.section-3 .d-flex .contact-form-container button.btn {
+  outline: none;
+  border: none;
+  margin-top: 2.5rem;
+  margin-left: auto;
 }
 
 .btn {
