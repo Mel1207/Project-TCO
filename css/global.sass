@@ -13,6 +13,7 @@ body
 // NAVBAR
 .navbar 
     height: 8vh
+    min-height: 60px
     position: fixed
     top: 0
     left: 0
@@ -64,32 +65,32 @@ body
         background: $cWhite
         transition: 0.3s ease
 
-.menu-click
-    .top-line
-        -webkit-transform: rotate(45deg)
-        -moz-transform: rotate(45deg)
-        -o-transform: rotate(45deg)
-        transform: rotate(45deg) translate(9px, 6px)
-        top: -3px
-        left: 8px
-    
-    .mid-line
-        width: 0
-        opacity: 0
+    &:hover
+        .top-line
+            -webkit-transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg) translate(9px, 6px)
+            top: -3px
+            left: 8px
+        
+        .mid-line
+            width: 0
+            opacity: 0
 
-    .bot-line
-        -webkit-transform: rotate(-45deg)
-        -moz-transform: rotate(-45deg)
-        -o-transform: rotate(-45deg)
-        transform: rotate(-45deg) translate(9px, -5px)
-        top: 39px
-        left: 8px
+        .bot-line
+            -webkit-transform: rotate(-45deg)
+            -moz-transform: rotate(-45deg)
+            -o-transform: rotate(-45deg)
+            transform: rotate(-45deg) translate(9px, -5px)
+            top: 39px
+            left: 8px
     
 // MOBILE MENU
 .mobile-menu
     height: 100%
     position: fixed
-    z-index: 9
+    z-index: 10
     width: 100%
     top: 0
     left: -100%
@@ -112,6 +113,29 @@ body
                 font-weight: 300
                 margin-bottom: 20px
                 color: $cWhite
+
+    .hamburger-menu-white
+        position: absolute
+        cursor: pointer
+        top: 50%
+        transform: translateY(-50%)
+        right: 10%
+        height: 50px
+        width: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        z-index: 20
+
+        .top-line, .bot-line
+            width: 3px
+            background: $cWhite
+
+        .top-line
+            height: 50%
+        
+        .bot-line
+            height: 100%
 
 .mobile-menu-show
     left: 0
@@ -136,7 +160,6 @@ body
     .hamburger-menu 
         div 
             background: $cBlack
-
 
 // HEADER
 .header

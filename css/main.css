@@ -28,6 +28,7 @@ body {
 
 .navbar {
   height: 8vh;
+  min-height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -79,8 +80,7 @@ body {
   background: #fff;
   transition: 0.3s ease;
 }
-
-.menu-click .top-line {
+.hamburger-menu:hover .top-line {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -88,11 +88,11 @@ body {
   top: -3px;
   left: 8px;
 }
-.menu-click .mid-line {
+.hamburger-menu:hover .mid-line {
   width: 0;
   opacity: 0;
 }
-.menu-click .bot-line {
+.hamburger-menu:hover .bot-line {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -104,7 +104,7 @@ body {
 .mobile-menu {
   height: 100%;
   position: fixed;
-  z-index: 9;
+  z-index: 10;
   width: 100%;
   top: 0;
   left: -100%;
@@ -126,6 +126,29 @@ body {
   font-weight: 300;
   margin-bottom: 20px;
   color: #fff;
+}
+.mobile-menu .hamburger-menu-white {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  height: 50px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+}
+.mobile-menu .hamburger-menu-white .top-line, .mobile-menu .hamburger-menu-white .bot-line {
+  width: 3px;
+  background: #fff;
+}
+.mobile-menu .hamburger-menu-white .top-line {
+  height: 50%;
+}
+.mobile-menu .hamburger-menu-white .bot-line {
+  height: 100%;
 }
 
 .mobile-menu-show {
