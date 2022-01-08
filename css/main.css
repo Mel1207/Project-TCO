@@ -231,7 +231,7 @@ body {
 }
 .section-3 .d-flex .contact-form-container {
   width: 450px;
-  height: 492px;
+  height: auto;
   background: #fff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -247,11 +247,22 @@ body {
   margin-bottom: 15px;
 }
 .section-3 .d-flex .contact-form-container input, .section-3 .d-flex .contact-form-container textarea {
-  padding: 5px 20px;
+  padding: 5px 15px;
   width: 100%;
   outline: none;
   border: 1px solid #22A0BB;
   border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.section-3 .d-flex .contact-form-container ::-webkit-input-placeholder {
+  color: #22A0BB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+.section-3 .d-flex .contact-form-container textarea {
+  padding-top: 12px;
+  resize: none;
 }
 .section-3 .d-flex .contact-form-container button.btn {
   outline: none;
@@ -259,6 +270,8 @@ body {
   margin-top: 2.5rem;
   margin-left: auto;
   display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
 
 .footer {
