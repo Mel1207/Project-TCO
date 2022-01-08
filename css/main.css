@@ -271,6 +271,37 @@ body {
   align-items: start;
   justify-content: space-between;
 }
+.footer .d-flex .column-1 p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.6rem;
+}
+.footer .d-flex .column-2 h5 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.footer .d-flex .column-2 ul li {
+  margin-bottom: 5px;
+}
+.footer .d-flex .column-2 ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 200;
+}
+.footer .d-flex .column-3 h5 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.footer .d-flex .column-3 ul {
+  display: flex;
+  align-items: center;
+}
+.footer .d-flex .column-3 ul li {
+  margin-right: 30px;
+}
 
 .btn {
   padding: 10px 30px;
